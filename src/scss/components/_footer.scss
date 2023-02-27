@@ -1,0 +1,198 @@
+.footer {
+  padding: 20px 0;
+  background-color: $back-color;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: $wd2) {
+      display: none;
+    }
+    &-mobile {
+      display: none;
+      @media (max-width: $wd2) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  &__logo {}
+  &__image {}
+  &__empty-block {
+    margin: 0 20px;
+    width: 1px;
+    height: 102px;
+    background-color: rgba(255, 255, 255, 0.47);;
+  }
+  &__nav-main {
+
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 1014px;
+  }
+  &__nav {}
+  &__menu {}
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__nav-item {}
+  &__nav-item-menu {
+    & a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.085em;
+      text-transform: uppercase;
+      color: $light-color;
+      @media (max-width: $wd1) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+  }
+  &__nav-link {}
+  &__contacts {}
+  &__nav-item-contacts {}
+  &__nav-call-me {
+    max-width: 246px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: $light-color;
+    @media (max-width: $wd1) {
+      max-width: 190px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+  &__nav-mail-phone {
+    & a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $light-color;
+      @media (max-width: $wd1) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+  &__nav-lang {
+    & a {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      color: $light-color;
+      @media (max-width: $wd1) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+  }
+  &__nav-btn {
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+
+  &__top-mobile {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__logo {}
+  &__image {}
+  &__contacts-mobile {
+    display: flex;
+    @media (max-width: $wd3) {
+      flex-direction: column;
+    }
+  }
+  &__nav-item {}
+  &__nav-item-contacts {}
+  &__nav-mail-phone-mobile {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    @media (max-width: 375.98px) {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    &:not(:last-child) {
+      margin-right: 20px;
+      @media (max-width: $wd3) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__nav-link {
+    color: $light-color;
+  }
+  &__btn-mobile {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: end;
+  }
+  &__nav-btn {
+    @media (max-width: 375.98px) {
+      flex: 1 1 100%;
+    }
+  }
+  &__navigation-mobile {}
+  &__nav-mobile {}
+  &__menu {}
+  &__nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (max-width: 375.98px) {
+      align-items: center;
+    }
+  }
+  &__nav-item-menu-mobile {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__bot-mobile {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 375.98px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    & a {
+      margin-bottom: 20px;
+    }
+    & .lang {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+    }
+  }
+  &__politics {
+    max-width: 245px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    @media (max-width: 375.98px) {
+      text-align: center;
+    }
+  }
+  &__nav-link-mobile {
+    color: $light-color;
+  }
+}

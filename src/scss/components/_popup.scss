@@ -1,0 +1,145 @@
+@keyframes hides {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes vies {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup {
+  background-color: rgba($color: #000, $alpha: 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+  z-index: 200;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__content {
+    margin: 0 5px;
+    padding: 50px 5px;
+    background-color: $light-color;
+    border-radius: 5px;
+    position: relative;
+    max-width: 530px;
+    max-height: 460px;
+    min-height: 445px;
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .5s ease 0s;
+
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    max-width: 350px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $dark-color;
+
+    &.hide {
+      animation: hides 1s ease;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.hide {
+      animation: hides 1s ease;
+    }
+  }
+
+  &__name {
+    background: $light-color url(../img/svg/questions/1.svg) 95% / 24px no-repeat;
+    margin-bottom: 15px;
+  }
+
+  &__phone {
+    background: $light-color url(../img/svg/questions/2.svg) 95% / 17.25px no-repeat;
+    margin-bottom: 25px;
+  }
+
+  &__input {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    padding: 16px 23px;
+    width: 344px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+
+    @media (max-width: $wdm) {
+      width: 294px;
+    }
+
+    &.error {
+      border: 1px solid red;
+    }
+  }
+
+  &__btn {
+    width: 344px;
+
+    @media (max-width: $wdm) {
+      width: 294px;
+    }
+  }
+
+  &__thx {
+    margin-top: 20px;
+    display: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $dark-color;
+
+    &.hide {
+      display: block;
+      animation: vies 1s ease;
+    }
+  }
+
+
+}

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <link rel="preload" href="fonts/Inter-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Inter-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230227081238" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20230227081238">
+  <script src="js/app.min.js?_v=20230227081238" defer></script>
+  <title>Главная!</title>
+</head>
+
+<body>
+  <div class="hidden-menu">
+  <div class="header-close close"></div>
+  <picture><source srcset="img/burger/logo-burger.webp" type="image/webp"><img src="img/burger/logo-burger.png" class="image" width="237" height="192" alt="Агро-Маркет"></picture>
+</div>
+<header class="header">
+
+  <div class="container">
+
+    <div class="header__row">
+      <a href="#" class="logo">
+        <img loading="lazy" src="img/svg/header/logo.svg" class="image" width="130" height="105.19" alt="Агро-Маркет">
+      </a>
+      <div class="empty-block"></div>
+      <div class="header__nav header__main">
+        <nav class="nav header-menu">
+          <ul class="nav__list list-burger">
+            <li class="nav__item nav__item-main"><a href="#hero" class="nav__link nav__link-main">Главная</a></li>
+            <li class="nav__item nav__item-main"><a href="#benefits" class="nav__link nav__link-main">Наши
+                преимущества</a></li>
+            <li class="nav__item nav__item-main"><a href="#create" class="nav__link nav__link-main">Что мы
+                производим?</a></li>
+            <li class="nav__item nav__item-main"><a href="#about" class="nav__link nav__link-main">О нас</a>
+            </li>
+            <li class="nav__item nav__item-main"><a href="#stages" class="nav__link nav__link-main">Этапы
+                сотрудничества</a></li>
+            <li class="nav__item nav__item-main"><a href="#questions" class="nav__link nav__link-main"
+                title="">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="nav header__contacts">
+          <ul class="nav__list">
+            <li class="nav__item nav__call-me">Позвоните или напишите нам:</li>
+            <li class="nav__item nav__item-mobile">
+              <a href="mailto:info@agromarket.info" class="nav__link nav__mail-phone">
+                <img loading="lazy" src="img/svg/header/email.svg" class="image" width="22" height="22" alt="e-mail">
+                info@agromarket.info
+              </a>
+            </li>
+            <li class="nav__item nav__item-phone">
+              <a href="tel:+74959702852" class="nav__link nav__mail-phone">
+                <img loading="lazy" src="img/svg/header/phone.svg" class="image" width="22" height="22" alt="e-mail">
+                <span>+7 (495&rpar; 970-28-52</span>
+              </a>
+            </li>
+            <li class="nav__item nav__item-lang"><button class="nav__link nav__lang">EN</button></li>
+            <li class="nav__item"><button class="btn nav__btn btn-popup" data-popup="popup">Обратный звонок</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header__row header__row-mobile">
+      <div class="header__nav header__nav-top-mobile">
+        <a href="#" class="logo">
+          <img loading="lazy" src="img/svg/header/logo.svg" class="image" width="98" height="73.56" alt="Агро-Маркет">
+        </a>
+        <ul class="nav__list nav__list-top-mobile">
+          <li class="nav__item">
+            <a href="tel:+74959702852" class="nav__link nav__mail-phone-mobile">
+              <img loading="lazy" src="img/svg/header/phone.svg" class="image" width="22" height="22" alt="e-mail">
+              <span>+7 (495&rpar; 970-28-52</span>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="mailto:info@agromarket.info" class="nav__link nav__mail-phone-mobile">
+              <img loading="lazy" src="img/svg/header/email.svg" class="image" width="22" height="22" alt="e-mail">
+              info@agromarket.info
+            </a>
+          </li>
+        </ul>
+        <div class="burger"><span></span></div>
+      </div>
+      <div class="header__nav header__nav-bot-mobile">
+        <ul class="nav__list nav__list-bot-mobile">
+          <li class="nav__item"><button class="btn nav__btn-mobile btn-popup" data-popup="popup">Обратный
+              звонок</button></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__lang nav__lang-mobile">EN</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+  <main>
+    <section class="hero" id="hero">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper hero__wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide hero__slide">
+      <div class="hero__block">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              ТОРГОВЛЯ ТОВАРАМИ И ПРОДУКЦИЕЙ
+              <span class="hero__title-accent">В СЕЛЬСКОХОЗСЕКТОРЕ</span>
+              <span class="hero__title-text">Импорт и экспорт сельскохозяйственной продукции
+                и компонентов для сельхоз. производителей с 2002 года!</span>
+            </h1>
+            <button class="hero__link btn-link btn-popup" data-popup="popup">
+              <div class="hero__arrow arrow btn-popup" data-popup="popup"></div>
+              <div class="hero__arrow-text btn-popup" data-popup="popup">ОСТАВИТЬ ЗАЯВКУ НА СОТРУДНИЧЕСТВО</div>
+            </button>
+          </div>
+          <!-- <div class="hero__dots dots swiper-pagination">
+            <span class="hero__dot dot active"></span>
+            <span class="hero__dot dot"></span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="hero__block hero__block-two">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              ТОРГОВЛЯ ТОВАРАМИ И ПРОДУКЦИЕЙ
+              <span class="hero__title-accent">В СЕЛЬСКОХОЗСЕКТОРЕ</span>
+              <span class="hero__title-text">Импорт и экспорт сельскохозяйственной продукции
+                и компонентов для сельхоз. производителей с 2002 года!</span>
+            </h1>
+            <button class="hero__link btn-link">
+              <div class="hero__arrow arrow btn-popup" data-popup="popup"></div>
+              <div class="hero__arrow-text btn-popup" data-popup="popup">ОСТАВИТЬ ЗАЯВКУ НА СОТРУДНИЧЕСТВО</div>
+            </button>
+          </div>
+          <!-- <div class="hero__dots dots swiper-pagination">
+            <span class="hero__dot dot active"></span>
+            <span class="hero__dot dot"></span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+</section>
+    <section class="benefits" id="benefits">
+  <div class="container">
+    <div class="benefits__title">
+      <div class="benefits__up-title up-title">Почему выбирают нас?</div>
+      <h2>Наши преимущества</h2>
+    </div>
+    <div class="benefits__top benefits-top">
+      <ul class="benefits-top__list">
+        <li class="benefits-top__item top-item">
+          <div class="top-item__head">
+            <img loading="lazy" src="img/svg/benefits/1.svg" class="image" width="82" height="82" alt="Logo">
+            <div class="top-item__title">Логистическая эффективность</div>
+          </div>
+          <div class="top-item__text">
+            <span>Наши складские помещения, транспорт и доступ к терминалам во всех основных пунктах обеспечивают
+              эффективность и контроль исполнения.</span>
+          </div>
+        </li>
+        <li class="benefits-top__item top-item">
+          <div class="top-item__head">
+            <img loading="lazy" src="img/svg/benefits/2.svg" class="image" width="82" height="82" alt="Logo">
+            <div class="top-item__title">Гибкость поставок и контроль качества</div>
+          </div>
+          <div class="top-item__text">
+            <span>Мы предоставляем клиентам доступ к наборам инструментов для ценообразования и управления рисками,
+              которые помогают управлять ценами на физические товары.</span>
+          </div>
+        </li>
+        <li class="benefits-top__item top-item">
+          <div class="top-item__head">
+            <img loading="lazy" src="img/svg/benefits/3.svg" class="image" width="82" height="82" alt="Logo">
+            <div class="top-item__title">Управления рисками и ценообразованием</div>
+          </div>
+          <div class="top-item__text">
+            <span>Наши складские помещения, транспорт и доступ к терминалам во всех основных пунктах обеспечивают
+              эффективность и контроль исполнения.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="benefits__mid benefits-mid" id="create">
+      <div class="benefits-mid__title">
+        <div class="benefits-mid__up-title up-title">наша продукция</div>
+        <h2>Что мы производим?</h2>
+      </div>
+      <div class="benefits-mid__content">
+        <div class="benefits-mid__text">
+          Основные виды реализуемой продукции – сахар, пшеница, ячмень, кукуруза, масличные агрокультуры, аминокислоты.
+        </div>
+        <button class="benefits-mid__btn btn btn-popup" data-popup="popup">Оставить заявку на закупку</button>
+      </div>
+    </div>
+    <div class="benefits__bot benefits-bot">
+      <ul class="benefits-bot__list">
+        <li class="benefits-bot__item bot-item sugar">
+          <button class="bot-item__link btn-link">
+            <div class="bot-item__arrow arrow btn-popup" data-popup="popup"></div>
+            <div class="bot-item__arrow-text btn-popup" data-popup="popup">Сахар</div>
+          </button>
+        </li>
+        <li class="benefits-bot__item bot-item zlack">
+          <button class="bot-item__link btn-link">
+            <div class="bot-item__arrow arrow btn-popup" data-popup="popup"></div>
+            <div class="bot-item__arrow-text btn-popup" data-popup="popup">Пшеница, ячмень, кукуруза</div>
+          </button>
+        </li>
+        <li class="benefits-bot__item bot-item oil">
+          <button class="bot-item__link btn-link">
+            <div class="bot-item__arrow arrow btn-popup" data-popup="popup"></div>
+            <div class="bot-item__arrow-text btn-popup" data-popup="popup">Масличные агрокультуры</div>
+          </button>
+        </li>
+        <li class="benefits-bot__item bot-item amin">
+          <button class="bot-item__link btn-link">
+            <div class="bot-item__arrow arrow btn-popup" data-popup="popup"></div>
+            <div class="bot-item__arrow-text btn-popup" data-popup="popup">Аминокислоты</div>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="benefits__mobile">
+      <div class="benefits-mid__text">
+        Основные виды реализуемой продукции – сахар, пшеница, ячмень, кукуруза, масличные агрокультуры, аминокислоты.
+      </div>
+      <button class="benefits-mid__btn btn">Оставить заявку на закупку</button>
+    </div>
+  </div>
+</section>
+    <section class="history">
+  <div class="container">
+    <div class="history__row">
+      <div class="history__title">
+        <div class="history__up-title up-title">Как мы начинали</div>
+        <h2>история развития компании</h2>
+      </div>
+      <div class="history__slider">
+        <div class="history__wrapper swiper-wrapper">
+          <div class="history__content swiper-slide">
+            <div class="history__years years">
+              <div class="years__text-accent">2002 - н.в.</div>
+              <div class="years__str"></div>
+              <div class="years__text-light">2017 - 2020 г.</div>
+              <div class="years__str"></div>
+              <div class="years__text-light">2020 - н.в.</div>
+            </div>
+            <span>Экспорт сахара, зерновых, зернобобовых и маслиничных культур и продуктов их переработки</span>
+          </div>
+          <div class="history__content swiper-slide">
+            <div class="history__years years">
+              <div class="years__text-light">2002 - н.в.</div>
+              <div class="years__str"></div>
+              <div class="years__text-accent">2017 - 2020 г.</div>
+              <div class="years__str"></div>
+              <div class="years__text-light">2020 - н.в.</div>
+            </div>
+            <span>Экспорт сахара, зерновых, зернобобовых и маслиничных культур и продуктов их переработки</span>
+          </div>
+          <div class="history__content swiper-slide">
+            <div class="history__years years">
+              <div class="years__text-light">2002 - н.в.</div>
+              <div class="years__str"></div>
+              <div class="years__text-light">2017 - 2020 г.</div>
+              <div class="years__str"></div>
+              <div class="years__text-accent">2020 - н.в.</div>
+            </div>
+            <span>Экспорт сахара, зерновых, зернобобовых и маслиничных культур и продуктов их переработки</span>
+          </div>
+        </div>
+      </div>
+      <div class="history__arrow-left"></div>
+      <div class="history__arrow-right"></div>
+      <div class="history__dots dots"></div>
+    </div>
+  </div>
+</section>
+    <div class="about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__item-0">
+        <img loading="lazy" src="img/svg/about/1.svg" class="image about__image" width="379" height="307"
+          alt="Agro-Market">
+      </div>
+      <div class="about__item-1">
+        <div class="about__title">
+          <div class="about__up-title up-title">о нашей компании</div>
+          <h2>подробнее о нас</h2>
+        </div>
+      </div>
+      <div class="about__item-2">
+        <div class="about__content">
+          <div class="about__text">
+            <p><strong>ТД "АгроМаркет"</strong> специализируется на импорте и экспорте сельскохозяйственной продукции и
+              компонентов для сельхоз производителей с <b>2002 года.</b></p>
+            <p>Основные виды реализуемой продукции – сахар, пшеница, ячмень, кукуруза, масличные агрокультуры,
+              аминокислоты.</p>
+            <p>Компания сочетает в себе <strong>опыт, всестороннее знание мирового рынка, специализацию бизнеса,
+                талантливую команду и эксклюзивную базу поставщиков,</strong> чтобы предлагать лучший сервис клиентами
+              поставщикам.</p>
+          </div>
+          <button class="about__btn btn btn-popup" data-popup="popup">
+            Оставить заявку на закупку
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <section class="partners">
+  <div class="container">
+    <div class="partners__row">
+      <div class="partners__title">
+        <div class="partners__up-title up-title">нам доверяют</div>
+        <h2>наши партнеры</h2>
+      </div>
+      <div class="partners__cards cards">
+        <div class="cards__list swiper-wrapper">
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <img loading="lazy" src="img/partners/1.svg" class="image partners__image" width="" height="" alt="БАИ">
+            </div>
+          </div>
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <picture><source srcset="img/partners/2.webp" type="image/webp"><img loading="lazy" src="img/partners/2.png" class="image partners__image" width="" height="" alt="СГЦ"></picture>
+            </div>
+          </div>
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <picture><source srcset="img/partners/3.webp" type="image/webp"><img loading="lazy" src="img/partners/3.png" class="image partners__image" width="" height="" alt="УМК"></picture>
+            </div>
+          </div>
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <picture><source srcset="img/partners/4.webp" type="image/webp"><img loading="lazy" src="img/partners/4.png" class="image partners__image" width="" height="" alt="БМК"></picture>
+            </div>
+          </div>
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <img loading="lazy" src="img/partners/5.png" class="image partners__image" width="" height=""
+                alt="ДКХП №1">
+            </div>
+          </div>
+          <div class="cards__item swiper-slide">
+            <div class="cards__wrap">
+              <picture><source srcset="img/partners/6.webp" type="image/webp"><img loading="lazy" src="img/partners/6.png" class="image partners__image" width="" height="" alt="ЧСЗ"></picture>
+            </div>
+          </div>
+        </div>
+        <div class="partners__arrow-right"></div>
+        <div class="partners__arrow-left"></div>
+        <div class="partners__dots"></div>
+      </div>
+      <div class="partners__content">
+        <div class="partners__text">Мы будем рады взаимовыгодному и плодотворному сотрудничеству, а также готовы
+          обеспечивать своим партнерам полную логистическую поддержку</div>
+        <button class="partners__btn btn btn-popup" data-popup="popup">Оставить заявку на закупку</button>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="stages" id="stages">
+  <div class="container">
+    <div class="stages__row">
+      <div class="stages__title">
+        <div class="stages__up-title up-title">Как начать работать с нами?</div>
+        <h2>этапы сотрудничества</h2>
+      </div>
+      <div class="stages__items">
+        <div class="stages__item">
+          <div class="stages__item-wrap stage">
+            <picture><source srcset="img/stages/arrow.webp" type="image/webp"><img loading="lazy" src="img/stages/arrow.png" class="image stage__image-arrow" width="109.82" height="109.82" alt=""></picture>
+            <div class="stage__top">
+              <img loading="lazy" src="img/svg/stages/1.svg" class="image stage__image" width="" height="" alt="">
+              <div class="stage__num">1</div>
+            </div>
+            <div class="stage__mid">
+              Оставляете заявку
+            </div>
+            <div class="stage__bot">
+              на нашем сайте через форму обратной связи или позвоните нам: +7 (495) 970-28-52
+            </div>
+          </div>
+        </div>
+        <div class="stages__item">
+          <div class="stages__item-wrap stage">
+            <picture><source srcset="img/stages/arrow.webp" type="image/webp"><img loading="lazy" src="img/stages/arrow.png" class="image stage__image-arrow" width="109.82" height="109.82" alt=""></picture>
+            <div class="stage__top">
+              <img loading="lazy" src="img/svg/stages/2.svg" class="image stage__image" width="" height="" alt="">
+              <div class="stage__num">2</div>
+            </div>
+            <div class="stage__mid">
+              Обговариваем условия
+            </div>
+            <div class="stage__bot">
+              сроки поставок, объемы, графики и прочие параметры дальнейших поставок
+            </div>
+          </div>
+        </div>
+        <div class="stages__item">
+          <div class="stages__item-wrap stage">
+            <picture><source srcset="img/stages/arrow.webp" type="image/webp"><img loading="lazy" src="img/stages/arrow.png" class="image stage__image-arrow" width="109.82" height="109.82" alt=""></picture>
+            <div class="stage__top">
+              <img loading="lazy" src="img/svg/stages/3.svg" class="image stage__image" width="" height="" alt="">
+              <div class="stage__num">3</div>
+            </div>
+            <div class="stage__mid">
+              Заключаем договор
+            </div>
+            <div class="stage__bot">
+              и фиксируем все условия документально. Вы можете скачать наши реквизиты тут
+            </div>
+          </div>
+        </div>
+        <div class="stages__item">
+          <div class="stages__item-wrap stage">
+            <div class="stage__top">
+              <img loading="lazy" src="img/svg/stages/4.svg" class="image stage__image" width="" height="" alt="">
+              <div class="stage__num">4</div>
+            </div>
+            <div class="stage__mid">
+              Начинаем поставки
+            </div>
+            <div class="stage__bot">
+              сельскохозяйственной продукции в полном объеме с доступом к логистике
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="questions" id="questions">
+  <div class="container">
+    <div class="questions__row">
+      <div class="questions__title">
+        <div class="questions__up-title up-title">как с нами связаться</div>
+        <h2>остались вопросы?</h2>
+      </div>
+      <div class="questions__content">
+        Укажите тему вашего вопроса и оставьте заявку, наш менеджер свяжется с Вами в ближайшее время и проведет консультацию
+      </div>
+      <form class="questions__form">
+        <div class="questions__form-top">
+          <input type="text" class="questions__name questions__input" placeholder="Ваше имя">
+          <input type="tel" class="questions__tel questions__input" placeholder="Телефон">
+          <input type="text" class="questions__text questions__input" placeholder="Тема обращения">
+        </div>
+        <div class="questions__form-bot">
+          <button class="questions__btn btn-form">Отправить вопрос</button>
+          <div class="questions__form-text">Заполняя форму, вы соглашаетесь с политикой конфиденциальности и условиями обработки данных</div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <a href="#" class="footer__logo">
+        <img loading="lazy" src="img/svg/header/logo.svg" class="image footer__image" width="130" height="105.19"
+          alt="Агро-Маркет">
+      </a>
+      <div class="footer__empty-block"></div>
+      <div class="footer__nav-main ">
+        <nav class="footer__nav footer__menu">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">Главная</a></li>
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">Наши
+                преимущества</a></li>
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">Что мы
+                производим?</a></li>
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">О нас</a></li>
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">Этапы
+                сотрудничества</a></li>
+            <li class="footer__nav-item footer__nav-item-menu"><a href="#" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__nav footer__contacts">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item footer__nav-item-contacts footer__nav-call-me">Политика конфиденциальности
+              Условия использования</li>
+            <li class="footer__nav-item footer__nav-item-contacts footer__nav-mail-phone">
+              <a href="mailto:info@agromarket.info" class="footer__nav-link">
+                <img loading="lazy" src="img/svg/header/email.svg" class="image" width="22" height="22" alt="e-mail">
+                info@agromarket.info
+              </a>
+            </li>
+            <li class="footer__nav-item footer__nav-item-contacts footer__nav-mail-phone">
+              <a href="tel:+74959702852" class="footer__nav-link">
+                <img loading="lazy" src="img/svg/header/phone.svg" class="image" width="22" height="22" alt="e-mail">
+                <span>+7 (495&rpar; 970-28-52</span>
+              </a>
+            </li>
+            <li class="footer__nav-item footer__nav-item-contacts footer__nav-lang">
+              <a href="#" class="footer__nav-link">EN</a>
+            </li>
+            <li class="footer__nav-item footer__nav-item-contacts">
+              <button href="#" class="btn footer__nav-btn">Реквизиты</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__row-mobile">
+      <div class="footer__top-mobile">
+        <a href="#" class="footer__logo">
+          <img loading="lazy" src="img/svg/header/logo.svg" class="image footer__image" width="115" height="93"
+            alt="Агро-Маркет">
+        </a>
+        <div class="footer__contacts-mobile">
+          <div class="footer__nav-item footer__nav-item-contacts footer__nav-mail-phone-mobile">
+            <a href="tel:+74959702852" class="footer__nav-link">
+              <img loading="lazy" src="img/svg/header/phone.svg" class="image" width="16.5" height="16.5" alt="e-mail">
+              <span>+7 (495&rpar; 970-28-52</span>
+            </a>
+          </div>
+          <div class="footer__nav-item footer__nav-item-contacts footer__nav-mail-phone-mobile">
+            <a href="mailto:info@agromarket.info" class="footer__nav-link">
+              <img loading="lazy" src="img/svg/header/email.svg" class="image" width="16.5" height="16.5" alt="e-mail">
+              info@agromarket.info
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__btn-mobile">
+        <button href="#" class="btn footer__nav-btn">Cкачать реквизиты</button>
+      </div>
+      <div class="footer__navigation-mobile">
+        <nav class="footer__nav-mobile footer__menu" title="Главное меню">
+          <ul class="footer__nav-list-mobile">
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#"
+                class="footer__nav-link-mobile">Главная</a></li>
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#" class="footer__nav-link-mobile">Наши
+                преимущества</a></li>
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#" class="footer__nav-link-mobile">Что мы
+                производим?</a></li>
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#" class="footer__nav-link-mobile">О
+                нас</a></li>
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#" class="footer__nav-link-mobile">Этапы
+                сотрудничества</a></li>
+            <li class="footer__nav-item footer__nav-item-menu-mobile"><a href="#"
+                class="footer__nav-link-mobile">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bot-mobile">
+        <a href="#" class="footer__nav-link lang">EN</a>
+        <a class="footer__nav-link footer__politics">Политика конфиденциальности Условия использования</a>
+      </div>
+    </div>
+  </div>
+</footer>
+  <div class="popup block-popup" data-popup="popup">
+  <div class="popup__content content">
+    <div class="popup_close close close-popup" data-popup="popup"></div>
+    <h2 class="popup__title">Заявка на закупку</h2>
+    <div class="popup__text">Оставьте заявку на закупку, и наш менеджер свяжется с Вами!</div>
+    <form action="#" class="popup__form">
+      <input type="text" class="popup__name popup__input" placeholder="Ваше имя">
+      <input type="tel" class="popup__phone popup__input" placeholder="Телефон">
+      <button class="popup__btn btn">Отправить заявку</button>
+    </form>
+    <div class="popup__thx"><span class="names"></span>, ваша заявка принята!</div>
+  </div>
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js?_v=20230227081238"></script>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+.partners {
+  padding: 80px 0 120px;
+  background-color: #f1f4f7;
+  overflow: hidden;
+
+  &__title {
+    margin-bottom: 80px;
+  }
+
+  &__up-title {
+    margin-bottom: 18px;
+  }
+
+  &__cards {
+    margin-bottom: 32px;
+    display: block;
+    position: relative;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width:$wd3) {
+      display: none;
+    }
+  }
+
+  &__text {
+    margin-right: 20px;
+    max-width: 675px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-color;
+  }
+
+  &__btn {
+    padding-left: 51px;
+    padding-right: 51px;
+
+    @media (max-width:$wd2) {
+      min-width: 229px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  &__cards-mobile {
+    position: relative;
+    display: none;
+    width: 100%;
+
+    @media (max-width: $wd3) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__arrow-left,
+  &__arrow-right {
+    display: none;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+    top: 40px;
+
+    @media (max-width: $wd3) {
+      display: block;
+    }
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 9px;
+      width: 2px;
+      height: 16px;
+      background-color: $dark-color;
+    }
+
+    &::before {
+      top: 13px;
+    }
+  }
+
+  &__arrow-left {
+    left: 0;
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__arrow-right {
+    right: 0;
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &__dots {
+    display: none;
+    justify-content: center;
+
+    @media (max-width: $wd3) {
+      display: flex;
+    }
+
+    & .swiper-pagination-bullet {
+      border-color: $accent-color;
+      background-color: $accent-color;
+    }
+
+    & .swiper-pagination-bullet-active {
+      background: none;
+    }
+  }
+}
+
+.cards {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    @media (max-width:$wd3) {
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 0;
+    }
+  }
+
+  &__wrap {
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    width: 183px;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__wrap {
+    background-color: $light-color;
+    width: 184px;
+    height: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

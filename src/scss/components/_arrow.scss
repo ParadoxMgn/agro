@@ -1,0 +1,37 @@
+.arrow {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  background-color: $light-color;
+  border-radius: 50%;
+  @media (max-width:$wd3) {
+    width: 37.25px;
+    height: 37.25px;
+    min-width: 37.25px;
+    min-height: 37.25px;
+  }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 22px;
+    width: 3px;
+    height: 16px;
+    background-color: $dark-color;
+    transform: rotate(-45deg);
+    @media (max-width:$wd3) {
+      top: 6px;
+      left: 19px;
+    }
+  }
+  &::before {
+    top: 19.5px;
+    transform: rotate(45deg);
+    @media (max-width:$wd3) {
+      top: 16px;
+    }
+  }
+}

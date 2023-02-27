@@ -1,0 +1,104 @@
+body.lock {
+  overflow: hidden;
+}
+
+.burger {
+  position: relative;
+  min-width: 27px;
+  height: 18px;
+  z-index: 11;
+}
+
+.burger span,
+.burger::after,
+.burger::before {
+  @media (max-width: $wd2) {
+    position: absolute;
+    width: 27px;
+    height: 3px;
+    background-color: $accent-color;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+.burger::before {
+  @media (max-width: $wd2) {
+    content: '';
+    top: 7px;
+  }
+}
+
+.burger::after {
+  @media (max-width: $wd2) {
+    content: '';
+    top: 14px;
+  }
+}
+
+.burger.active span {
+  display: none;
+  background-color: $accent-color;
+}
+
+.burger.active::after {
+  top: 7px;
+  transform: rotate(45deg);
+  background-color: $accent-color;
+}
+
+.burger.active::before {
+  top: 7px;
+  transform: rotate(-45deg);
+  background-color: $accent-color;
+}
+
+.hidden-menu {
+  padding: 34px 30px 0;
+  min-height: 740px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 30px;
+  background-color: $light-color;
+  transform: translateX(-110%);
+  transition: all 0.5s linear;
+  z-index: 20000;
+
+  & .image {
+    margin-top: 34px;
+    margin-left: 14px;
+  }
+
+  &.active {
+    transform: translateX(0%);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 14px;
+    height: 2px;
+    transform: rotate(-45deg);
+    background-color: #757575;
+    cursor: pointer;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+}

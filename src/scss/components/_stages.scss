@@ -1,0 +1,116 @@
+.stages {
+  padding: 66px 0 55px;
+  background: $back-color url(../img/history/back.png) 0 100%/100% no-repeat;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__title {
+    margin-bottom: 55px;
+    & h2 {
+      @media (max-width: $wd2) {
+        font-size: 33px;
+        line-height: 40px;
+      }
+      @media (max-width: $wd3) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+  &__up-title {
+    margin-bottom: 29px;
+    color: $light-color;
+  }
+  &__items {
+    margin: 0 -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    @media (max-width: $wd2) {
+      margin: 0 -25px;
+    }
+    @media (max-width: $wd3) {
+      margin: 0 0;
+    }
+  }
+  &__item {
+    margin-bottom: 25px;
+    padding: 0 30px;
+    flex: 0 0 300px;
+    @media (max-width: $wd2) {
+      padding: 0 25px;
+      flex: 0 0 300px;
+    }
+    @media (max-width: $wd3) {
+      padding: 0 0;
+      flex: 0 0 79%;
+    }
+
+    &:last-child {
+      & .stage__top {
+        margin-bottom: 0;
+      }
+      & .stages__item-wrap {
+        margin-top: -14px;
+      }
+    }
+  }
+  &__item-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @media (max-width: $wd3) {
+      align-items: center;
+    }
+  }
+}
+.stage {
+  &__top {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+  }
+  &__image-arrow {
+    position: absolute;
+    top: -22px;
+    right: -23px;
+    @media (max-width: $wd3) {
+      display: none;
+    }
+  }
+  &__num {
+    margin-left: 10px;
+    background-color: $accent-color;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: $light-color;
+  }
+  &__mid {
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $accent-color;
+    text-align: center;
+  }
+  &__bot {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $light-color;
+    @media (max-width: $wd3) {
+      text-align: center;
+    }
+  }
+}

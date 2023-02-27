@@ -1,0 +1,115 @@
+.questions {
+  padding: 82px 0 80px;
+  background: url(../img/questions/back.png) 0 / cover no-repeat;
+  @media (max-width: $wd3) {
+    padding: 55px 0 42px;
+    background: url(../img/questions/back.png) 43% / cover no-repeat;
+  }
+  &__title {
+    margin-bottom: 32px;
+    & h2 {
+      text-align: left;
+      @media (max-width: $wd3) {
+        text-align: center;
+      }
+    }
+  }
+  &__up-title {
+    margin-bottom: 23px;
+    text-align: left;
+    @media (max-width: $wd3) {
+      text-align: center;
+    }
+  }
+  &__content {
+    margin-bottom: 66px;
+    max-width: 488px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $dark-color;
+    @media (max-width: $wd3) {
+      max-width: 100%;
+      text-align: center;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  &__form-top {
+    margin-bottom: 16px;
+    display: flex;
+    @media (max-width: 820.98px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: $wd3) {
+      justify-content: center;
+    }
+  }
+  &__name {
+    background: $light-color url(../img/svg/questions/1.svg) 95% / 24px no-repeat;
+  }
+  &__input {
+    border: 1px solid $border-color;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    padding: 16px 23px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #757575;
+    flex: 0 1 285px;
+    &:not(:last-child) {
+      margin-right: 17px;
+      @media (max-width: $wd3) {
+        margin-right: 0;
+      }
+    }
+  }
+  &__tel {
+    background: $light-color url(../img/svg/questions/2.svg) 95% / 17.25px no-repeat;
+  }
+  &__form-bot {
+    display: flex;
+    align-items: center;
+    @media (max-width: $wd3) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__btn {
+    margin-right: 40px;
+    margin-bottom: 29px;
+    padding-left: 69px;
+    padding-right: 69px;
+    flex: 0 0 auto;
+    @media (max-width: 856.98px) {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    @media (max-width: 837.98px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media (max-width: $wd3) {
+      margin-right: 0;
+      padding-left: 69px;
+      padding-right: 69px;
+      flex: 0 1 285px;
+    }
+  }
+  &__form-text {
+    margin-bottom: 29px;
+    max-width: 488px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dark-color;
+    flex: 0 1 auto;
+    @media (max-width: $wd3) {
+      max-width: 80%;
+      text-align: center;
+      font-size: 12px;
+    line-height: 15px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// base
+$font-family: "Inter", sans-serif;
+$content-width: 1200px;
+$container-offset: 0px;
+$container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// colors
+$light-color: #fff;
+$accent-color: #f1cf69;
+$dark-color: #282828;
+$text-color: #454545;
+$back-color: #404A3D;
+$border-color: #D6D6D6;
+
+// width
+$cw: 1200;
+$mw: 320px;
+$wd1: $cw + 20 + px;
+$wd2: 1023.98 + px;
+$wd3: 621.98 + px;
+$wdm: 374.98 + px;
