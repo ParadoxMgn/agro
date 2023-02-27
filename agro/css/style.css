@@ -160,11 +160,6 @@ h2 {
   color: #282828;
 }
 
-.swiper-slide {
-  -ms-touch-action: none;
-      touch-action: none;
-}
-
 .history__dots {
   display: -webkit-box;
   display: -ms-flexbox;
